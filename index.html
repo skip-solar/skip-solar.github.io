@@ -1,44 +1,47 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
  <style>
-.parent {
-  position: relative;
+#parent {
+  position: absolute;
   top: 0px;
   left: 0px;
 }
 #image1 {
-  position: relative;
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  max-width: 50%;
+  left: 170px;
+  z-index: 0;
 }
 #fatty {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  max-width: 50%;
+  left: 170px;
+  z-index: 1;
 }
 </style>
   <style> 
   .shitass {
  position: absolute;
-  top: -50px;
-  right: -400px;
-    font-size: 100px;
+  left: 18px;
+    font-size: 10px;
     font-family: "arial"
   }
   .shitass {
-    border: 5px solid pink;
+    position: fixed;
+    border: 2px solid pink;
     background-color: #ffe8ef;
-    padding: 90px;
+    padding: 15px;
    font-weight: bold;
-    width: 600px;
-    height: 50px;
+    width: 300px;
+    text-align:  center;
+    z-index: -1;
   }
     </style>
   <meta name="viewport" content="width=device-width, initial-scale=-1.0">
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>LCL DRESS UP</title>
-  <div class="shitass" <h1 style=color:#707a82> LCL Dress Up </h1> </div>
+  <div class="shitass" <h1 style=color:#707a82> ♡----------------------------------------------------------------------♡</h1> </div>
 <body style=background-color:#707a82;>
  <div class="parent">
  <img id ="image1" src="untitled76.png"/>
@@ -47,60 +50,59 @@
   <div class="container">
    <div>
   <button onclick="document.getElementById('fatty').src='textbrown.png'"> 
-    <img src="brownbobhair.png">
+    <img src="brownbobhair.png"style=max-width:20%;max-height:auto;>
   </button>
    </div>
     <div>
     <button onclick="document.getElementById('fatty').src='textblondie.png'"> 
-    <img src="blondehair.png">
+    <img src="blondehair.png"style=max-width:20%;max-height:auto;>
   </button>
     </div>
      <div>
      <button onclick="document.getElementById('image1').src='coolshirt.png'">
-       <img src="coolshirticon.png"> 
+       <img src="coolshirticon.png"style=max-width:20%;max-height:auto;> 
      </button>
      </div>
         <div>
      <button onclick="document.getElementById('image1').src='frilly.png'">
-       <img src="frillyicon.png"> 
+       <img src="frillyicon.png" style=max-width:20%;max-height:auto;> 
      </button>
      </div>
      <div>
      <button onclick="document.getElementById('image1').src='2014tumblrfit.png'">
-       <img src="2014icon.png"> 
+       <img src="2014icon.png"style=max-width:20%;max-height:auto;>
      </button>
      </div>
       <div>
     <button onclick="document.getElementById('image1').src='n25serve.png'"> 
-      <img src="n25serveicon.png">
+      <img src="n25serveicon.png"style=max-width:20%;max-height:auto;>
   </button>
    </div>
-    <div>
       <button onclick="document.getElementById('image1').src='Untitled76.png'">
-        <b style=font-size:50px;color:#707a82> Reset Clothes </b>
-          </div>
-      <div>
+        <b style=font-size:10px;color:#707a82> Reset Clothes </b>
     <button onclick="document.getElementById('fatty').src='air.png'"> 
-     <b style=font-size:50px;color:#707a82> Reset Hair </b>
+     <b style=font-size:10px;color:#707a82> Reset Hair </b>
   </button>
-   </div>
        
  
    
   <style>
 .container {
-  display: grid;
-  grid-template-columns: auto auto auto;
- align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  
+  position: absolute;
+  top: 40px;
+  max-width: 45%;
+  max-height: 60%;
+  z-index: 1;
 }
 #container div {
   background-color: #f1f1f1;
   border: 1px solid black;
   margin: 1px;
-  padding: 10px;
   font-size: 1px;
+  
 }
 </style>
 </head>
